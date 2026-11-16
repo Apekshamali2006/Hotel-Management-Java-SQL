@@ -1,35 +1,72 @@
-HOTEL MANAGEMENT SYSTEM
+ # 🏨 Hotel Management System
 
-Technology:
-- Java 17+
-- Java Swing
-- JDBC
-- MySQL 8.0+
-- Maven
-- VS Code / IntelliJ IDEA / Eclipse
+### 🎓 Academic Mini Project | Java | MySQL | JDBC
 
-SETUP:
-1. Install JDK 17 or newer.
-2. Install MySQL Server and MySQL Workbench.
-3. Open database.sql in MySQL Workbench and execute it.
-4. Open DBConnection.java.
-5. Replace YOUR_MYSQL_PASSWORD with your MySQL root password.
-6. Open the project as a Maven project.
-7. Run com.hotel.Main.
-8. Login:
-   Username: admin
-   Password: admin123
+## 📌 Project Overview
 
-Modules:
-- Login
-- Dashboard
-- Room Management
-- Guest Management
-- Booking Management
-- Payment Management
+The Hotel Management System is a Java-based desktop application developed as an academic mini project for the Computer Engineering department.
 
-Date format:
-YYYY-MM-DD
+The project aims to simplify basic hotel operations by providing an organized system to manage customer information, room details, reservations, check-in/check-out activities, and payment records.
 
-Important:
-This is an academic mini-project. Passwords are stored as plain text only to keep the project simple for demonstration. A production system should use password hashing and role-based authorization.
+It uses Java for application development and MySQL for database management, with JDBC providing connectivity between the application and the database.
+
+## ✨ Key Features
+
+- **Customer Management** – Manage customer information.
+- **Room Management** – Maintain room details and availability.
+- **Booking Management** – Handle hotel reservations.
+- **Check-In / Check-Out** – Manage guest arrival and departure.
+- **Payment Management** – Maintain payment records.
+- **Database Integration** – Store and retrieve records using MySQL.
+- **CRUD Operations** – Create, Read, Update and Delete records.
+
+## 🛠️ Technologies Used
+
+| Technology | Application |
+|---|---|
+| Java 17+ | Core Programming |
+| Java Swing | Graphical User Interface |
+| MySQL | Database Management |
+| JDBC | Database Connectivity |
+| Maven | Project Build Management |
+| SQL | Database Queries |
+
+## 🗂️ Project Modules
+
+1. Dashboard
+2. Customer Management
+3. Room Management
+4. Booking Management
+5. Check-In / Check-Out
+6. Payment Management
+
+## 🗄️ Database Concepts
+
+- Relational Database Management
+- Primary Key and Foreign Key
+- Data Integrity Constraints
+- SQL Queries
+- Database Normalization
+
+## 🎯 Project Objectives
+
+- Apply Object-Oriented Programming concepts in Java.
+- Understand Java and MySQL database connectivity.
+- Implement CRUD operations.
+- Apply DBMS concepts in a practical application.
+- Develop a desktop-based management system.
+
+## 🚀 Future Enhancements
+
+- Admin Authentication
+- Online Room Reservation
+- Automated Invoice Generation
+- Advanced Reports and Analytics
+
+## 👩‍💻 Author
+
+**Apeksha Mali**
+
+B.Tech Computer Engineering
+
+**Project Type:** Academic Mini Project
