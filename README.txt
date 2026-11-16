@@ -1,4 +1,4 @@
- # 🏨 Hotel Management System
+# 🏨 Hotel Management System
 
 ### 🎓 Academic Mini Project | Java | MySQL | JDBC
 
