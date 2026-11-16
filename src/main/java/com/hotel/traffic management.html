@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Management System</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            margin: 0;
+        }
+
+        h1 {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Traffic Management System</h1>
+
+<div class="box">
+
+    <h2>Add Vehicle</h2>
+
+    <input type="text" id="number"
+           placeholder="Vehicle Number">
+
+    <select id="type">
+        <option>Car</option>
+        <option>Bike</option>
+        <option>Bus</option>
+        <option>Truck</option>
+    </select>
+
+    <input type="text" id="owner"
+           placeholder="Owner Name">
+
+    <button onclick="addVehicle()">
+        Add Vehicle
+    </button>
+
+
+    <h2>Vehicle Details</h2>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Vehicle Number</th>
+            <th>Type</th>
+            <th>Owner</th>
+        </tr>
+
+        <tbody id="vehicleTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<script>
+
+let id = 1;
+
+function addVehicle() {
+
+    let number =
+        document.getElementById("number").value;
+
+    let type =
+        document.getElementById("type").value;
+
+    let owner =
+        document.getElementById("owner").value;
+
+    if (number == "" || owner == "") {
+        alert("Please enter all details");
+        return;
+    }
+
+    let table =
+        document.getElementById("vehicleTable");
+
+    let row = table.insertRow();
+
+    row.insertCell(0).innerHTML = id;
+    row.insertCell(1).innerHTML = number;
+    row.insertCell(2).innerHTML = type;
+    row.insertCell(3).innerHTML = owner;
+
+    id++;
+
+    document.getElementById("number").value = "";
+    document.getElementById("owner").value = "";
+
+    alert("Vehicle Added Successfully!");
+}
+
+</script>
+
+</body>
+</html>
